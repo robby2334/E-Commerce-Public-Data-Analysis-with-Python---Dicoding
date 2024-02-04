@@ -74,7 +74,7 @@ def create_rfm_df(df):
     return rfm_df
 
 #menyiapkan data set
-all_df = pd.read_csv("all_data.csv")
+all_df = pd.read_csv("https://raw.githubusercontent.com/robby2334/E-Commerce-Public-Data-Analysis-with-Python---Dicoding/main/Dashboard/all_data.csv")
 
 datetime_columns=['order_purchase_timestamp','order_estimated_delivery_date']
 all_df.sort_values(by='order_purchase_timestamp', inplace=True)
